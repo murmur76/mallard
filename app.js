@@ -1,8 +1,13 @@
 var express = require('express')
 var app = express()
 
+app.set('views', './views')
+app.set('view engine', 'jade')
+
+app.use(express.static('assets'));
+
 app.get('/', function (req, res) {
-  res.send('hello')
+  res.render('index')
 })
 
 var server = app.listen(8081, function () {
