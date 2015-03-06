@@ -11,9 +11,14 @@
     }
   }
 
-  $(function () {
+  function setFullHeight() {
     var contentHeight = $(window).height() - $('#nav').height();
     $('#content').height(contentHeight);
+  }
+
+  $(function () {
+    setFullHeight();
+    $(window).resize(setFullHeight);
 
     setInterval(changeBackground, 5000);
   });
