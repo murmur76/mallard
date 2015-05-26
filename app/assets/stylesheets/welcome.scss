@@ -91,7 +91,7 @@ div.content div.description {
 div.content div.description div.title {
   color: white;
   position: absolute;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -100,4 +100,19 @@ div.content div.description div.title {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
+}
+
+div.content div.signin div.container {
+  position: relative;
+  background-color: white;
+  padding: 15px;
+  width: 100%;
+}
+
+div.content div.signin {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  z-index: 10;
+  width: 25%;
 }
