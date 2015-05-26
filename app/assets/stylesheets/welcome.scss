@@ -1,0 +1,103 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #F59576;
+  height: 55px;
+  z-index: 10;
+}
+
+header.nav>a.title {
+  display: block;
+  float: left;
+  height: 55px;
+  line-height: 55px;
+  font-size: 25px;
+  padding: 0 15px;
+  font-weight: bold;
+  color: white;
+}
+
+header.nav>div.buttons {
+  float: right;
+  margin-right: 10px;
+}
+header.nav>div.buttons>a {
+  display: block;
+  float: left;
+  height: 55px;
+  line-height: 55px;
+  font-size: 17px;
+  padding: 0 10px;
+  color: white;
+}
+header.nav>div.buttons>a:hover {
+  background: #D67C5E;
+}
+
+div.content {
+  margin-top: 55px;
+  position: relative;
+}
+
+div.content div.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+div.content div.background div.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F59576;
+  opacity: 0.4;
+  z-index: 2;
+}
+div.content div.background div.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: 1s linear opacity;
+  -webkit-transition: 1s linear opacity;
+  -moz-transition: 1s linear opacity;
+  -o-transition: 1s linear opacity;
+}
+div.content div.background div.img.shown {
+  opacity: 1;
+}
+
+div.content div.description {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+div.content div.description div.title {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
