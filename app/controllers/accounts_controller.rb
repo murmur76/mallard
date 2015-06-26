@@ -1,4 +1,8 @@
 class AccountsController < ApplicationController
+  def index
+    @accounts = Account.all
+  end
+
   def create
     @account = Account.new(account_params)
     @account.save
