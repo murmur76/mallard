@@ -4,6 +4,9 @@ class AccountsControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
+    assert_not_nil assigns(:accounts)
+    assert_template :index
+    assert_template layout: "layouts/application"
   end
 
   test "should create account" do
