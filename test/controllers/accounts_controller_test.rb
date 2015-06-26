@@ -13,6 +13,7 @@ class AccountsControllerTest < ActionController::TestCase
     assert_difference('Account.count') do
       post :create, account: accounts(:user1).serializable_hash()
     end
+    assert_not_nil assigns(:account)
     assert_redirected_to account_path(assigns(:account))
   end
 end
