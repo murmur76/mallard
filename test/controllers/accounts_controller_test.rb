@@ -23,8 +23,8 @@ class AccountsControllerTest < ActionController::TestCase
   end
 
   test "show should render correct page" do
-    @account = Account.first
-    get(:show, {'id' => @account.id})
+    account = Account.first
+    get(:show, {'id' => account.id})
     assert_template :show
   end
 end
