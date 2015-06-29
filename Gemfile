@@ -43,6 +43,8 @@ group :development, :test do
   gem 'spring'
 
   # Minitest
+  gem 'guard'
   gem 'minitest-reporters'
+  gem 'guard-minitest'
 end
 
