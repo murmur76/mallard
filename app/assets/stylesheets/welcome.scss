@@ -7,16 +7,16 @@ header.nav {
   left: 0;
   width: 100%;
   background: #F59576;
-  height: 55px;
+  height: 50px;
   z-index: 10;
 }
 
 header.nav>a.title {
   display: block;
   float: left;
-  height: 55px;
-  line-height: 55px;
-  font-size: 25px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
   padding: 0 15px;
   color: white;
 }
@@ -28,9 +28,9 @@ header.nav>div.buttons {
 header.nav>div.buttons>a {
   display: block;
   float: left;
-  height: 55px;
-  line-height: 55px;
-  font-size: 17px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
   padding: 0 10px;
   color: white;
 }
@@ -39,7 +39,7 @@ header.nav>div.buttons>a:hover {
 }
 
 div.content {
-  margin-top: 55px;
+  margin-top: 50px;
   position: relative;
 
   div.background {
