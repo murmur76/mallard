@@ -21,4 +21,10 @@ class AccountsControllerTest < ActionController::TestCase
     assert_not_nil assigns(:account)
     assert_redirected_to account_path(assigns(:account))
   end
+
+  test "show should render correct page" do
+    @account = Account.first
+    get(:show, {'id' => @account.id})
+    assert_template :show
+  end
 end
