@@ -9,6 +9,11 @@ class AccountsControllerTest < ActionController::TestCase
     assert_template layout: "layouts/application"
   end
 
+  test "new should render correct page" do
+    get :new
+    assert_template :new
+  end
+
   test "should create account" do
     assert_difference('Account.count') do
       post :create, account: accounts(:user1).serializable_hash()
