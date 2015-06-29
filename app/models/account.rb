@@ -1,3 +1,4 @@
 class Account < ActiveRecord::Base
-  validates :email, :password,  presence: true
+  validates :email, presence: true
+  has_secure_password
 end
